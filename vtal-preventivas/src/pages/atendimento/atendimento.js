@@ -6,6 +6,8 @@ import Footer from '../../componentes/footer/footer';
 
 const Atendimentos = () => {
     const { nomeFuncionario } = useParams();
+    const placeholderText = 'Troca de filtro de ar condicionado, vistoria do painel elétrico...';
+
 
     return (
         <>
@@ -14,7 +16,7 @@ const Atendimentos = () => {
             <h1 className="ola-funcionario">
                 Olá, <span className="nome-funcionario"> {nomeFuncionario} </span>! Esses são seus atendimentos do dia:
             </h1>
-            <InputSeta />
+            <InputSeta placeholder={placeholderText}/>
         </div>
         <Footer />
         </>

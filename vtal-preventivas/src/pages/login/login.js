@@ -61,7 +61,6 @@ export const Login = () => {
                 />
               <div style={{ color: 'red' }}>{errorMsg}</div>
               <button type="submit" className="botao-entrar">Entrar</button>                      
-
       </form>   
     </div>
     <Footer />
