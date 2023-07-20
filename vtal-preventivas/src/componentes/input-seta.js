@@ -9,23 +9,33 @@ const InputSeta = ({ placeholder }) => {
     <div className="input-seta">
         <div className="input-group">
             <input type="text" value="Atendimento 1" placeholder={placeholder} />
-            <FaAngleRight className="seta-lado" />
+            <Link to="/servico">
+                <FaAngleRight className="seta-lado" />
+            </Link>
         </div>
         <div className="input-group">
             <input type="text" value="Atendimento 2" placeholder={placeholder} />
-            <FaAngleRight className="seta-lado" />
+            <Link to="/servico">
+                <FaAngleRight className="seta-lado" />
+            </Link>
         </div>
         <div className="input-group">
             <input type="text" value="Atendimento 3" placeholder={placeholder} />
-            <FaAngleRight className="seta-lado" />
+            <Link to="/servico">
+                <FaAngleRight className="seta-lado" />
+            </Link>
         </div>
         <div className="input-group">
             <input type="text" value="Atendimento 4" placeholder={placeholder} />
-            <FaAngleRight className="seta-lado" />
+            <Link to="/servico">
+                <FaAngleRight className="seta-lado" />
+            </Link>
         </div>
         <div className="input-group">
             <input type="text" value="Atendimento 5" placeholder={placeholder} />
-            <FaAngleRight className="seta-lado" />
+            <Link to="/servico">
+                <FaAngleRight className="seta-lado" />
+            </Link>
 
         </div>
     </div>
