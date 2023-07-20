@@ -6,12 +6,33 @@ import "./login.css"
 
 export const Login = () => {
   const [nomeFuncionario, setNomeFuncionario] = useState('');
+  const [email, setEmail] = useState('');
+  const [senha, setSenha] = useState('');
+  const [errorMsg, setErrorMsg] = useState('');
+
   const navigate = useNavigate();
 
   const handleSubmit = (event) => {
   event.preventDefault();
-  navigate(`/atendimento/${nomeFuncionario}`);
+
+  if (isValidEmail(email) && isValidPassword(senha)) {
+    // Se o email e senha forem válidos, redirecione o usuário
+    setErrorMsg('');
+    navigate(`/atendimento/${nomeFuncionario}`);
+  } else {
+    // Se o email ou senha forem inválidos, exiba uma mensagem de erro
+    setErrorMsg('Email ou senha inválidos.');
   }
+  };
+
+  const isValidEmail = (email) => {
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailPattern.test(email);
+  };
+
+  const isValidPassword = (password) => {
+  return password.length >= 6;
+  };
 
   return (
     <>
@@ -30,12 +51,15 @@ export const Login = () => {
                 <input
                    type="text"
                    placeholder="Digite seu e-mail"
+                   onChange={(e) => setEmail(e.target.value)}
                 />
               <h3>Senha:</h3>
                 <input
                    type="text"
-                   placeholder="**"
-                /> 
+                   placeholder="******"
+                   onChange={(e) => setSenha(e.target.value)}
+                />
+              <div style={{ color: 'red' }}>{errorMsg}</div>
               <button type="submit" className="botao-entrar">Entrar</button>                      
 
       </form>   
@@ -46,5 +70,4 @@ export const Login = () => {
 }
 
 export default Login;
-
 
