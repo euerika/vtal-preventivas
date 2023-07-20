@@ -4,12 +4,12 @@ import InputSeta from '../../componentes/input-seta';
 
 
 const Atendimentos = () => {
-    const { nomeFuncionario } = useParams();
+    const {nomeFuncionario} = useParams();
 
     return (
-        <div>
+          <div>
             <h1 className="ola-funcionario">
-                Olá, <span className="nome-funcionario"> {nomeFuncionario} </span>! Esses são seus atendimentos do dia:
+                Olá, <span className="nome-funcionario"> {nomeFuncionario}</span>!  Esses são seus atendimentos do dia:
             </h1>
             <InputSeta />
         </div>
