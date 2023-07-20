@@ -14,7 +14,7 @@ const Atendimentos = () => {
         <Header /> 
         <div className="container-atendimentos">
             <h1 className="ola-funcionario">
-                Olá, <span className="nome-funcionario"> {nomeFuncionario} </span>! Esses são seus atendimentos do dia:
+                Olá, <span className="nome-funcionario"> {nomeFuncionario}</span>!  Esses são seus atendimentos do dia:
             </h1>
             <InputSeta placeholder={placeholderText}/>
         </div>
