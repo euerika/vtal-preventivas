@@ -36,6 +36,8 @@ input {
     margin-bottom: 145px;  
 }
 
+
+
 @media (min-width: 1024px) {
     .pai {
         display: flex;
@@ -55,3 +57,4 @@ input {
 
 }
 }
+
