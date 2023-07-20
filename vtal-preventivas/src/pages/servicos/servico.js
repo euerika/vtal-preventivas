@@ -2,7 +2,8 @@ import React from 'react';
 // import { useParams } from 'react-router-dom';
 import Footer from "../../componentes/footer/footer";
 import Header from "../../componentes/header/header";
-import "./servico.css"
+import PhotoUpload from '../../componentes/PhotoUpload/PhotoUpload.js';
+import "./servico.css";
 
 const Servico = () => {
   // const { nomeFuncionario } = useParams();
@@ -41,7 +42,9 @@ const Servico = () => {
         (Observação):
       </h4>
       <textarea  placeholder='Registar informações/observações sobre o atendimento...'/>
+      <PhotoUpload />
       </div>
+    
       <button type="submit" className="botao-finalizar">Finalizar</button>
       <Footer />
       </>

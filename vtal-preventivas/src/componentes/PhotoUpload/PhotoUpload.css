@@ -1,0 +1,24 @@
+
+.photo_upload{
+    font-size:  20px;
+    color:#464644;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+ ;
+}
+
+.photo_upload input[type="file"] {
+    background-color: #F4ECDF;
+    width: 310px;
+    
+  }
+
+.button-enviar{
+    border-radius: 20px;
+    color:azure;
+    font-size: 10px;
+    padding: 5px;
+    background-color:#959A24;
+    border: none;
+    margin-left: 290px;
+}
