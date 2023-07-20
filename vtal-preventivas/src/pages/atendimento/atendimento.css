@@ -43,4 +43,5 @@ body {
 .seta-lado {
     font-size: 18px; /* Tamanho do ícone */
     cursor: pointer;
+    color: #959A24;
 }
