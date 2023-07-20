@@ -1,0 +1,63 @@
+.atendimento {
+  color:#464644;
+  font-size:  20px;
+}
+
+.select{
+ display: flex;
+ flex-direction: column;
+ width: 95%;
+ height: 580px;
+ background-color:#FDFEF1;
+ margin-left: 10px;
+ border-radius: 20px;
+ border: #959A24 solid 2px;
+}
+
+.selects {
+  width: 330px;
+  height: 30px;
+  margin-top: 20px;
+  margin-left: 30px;  
+  text-align: center;
+  border-radius: 20px ;
+  border: #959A24 solid 2px;
+  background-color: #F4ECDF; 
+  color:#959A24;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif; 
+}
+
+h4 {   
+  margin-top: 30px;
+  margin-left: 40px;
+  color:#959A24 ;
+  font-family: Arial, Helvetica, sans-serif; 
+  margin-bottom: -10px;  
+}
+
+ textarea {
+  width: 330px;
+  height: 80px;
+  margin-top: 20px;
+  margin-left: 30px;  
+  text-align: center; 
+  color: #464644;
+  font-size: 20px;
+  border-radius: 20px;
+  border: #959A24 solid 2px;
+  background-color: #F4ECDF;
+  font-family: Arial, Helvetica, sans-serif;
+ }
+
+ .botao-finalizar{
+  margin:20px;
+  margin-left: 120px;
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  background-color:#959A24;
+  border: #F3FF01 solid 2px;
+  color:white;
+  margin-bottom: 20px;
+ }
