@@ -1,7 +1,8 @@
 import React from 'react';
 import '../pages/atendimento/atendimento.css';
-// import { IoIosArrowForward } from 'react-icons/io';
 import { FaAngleRight } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+
 
 const InputSeta = ({ placeholder }) => {
   return (
@@ -25,6 +26,7 @@ const InputSeta = ({ placeholder }) => {
         <div className="input-group">
             <input type="text" value="Atendimento 5" placeholder={placeholder} />
             <FaAngleRight className="seta-lado" />
+
         </div>
     </div>
   );
