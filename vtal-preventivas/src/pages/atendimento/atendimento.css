@@ -1,0 +1,40 @@
+body {
+    background-color: #F4ECDF;
+}
+.ola-funcionario {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #464644;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.nome-funcionario {
+    color: #959A24;
+}
+.input-seta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Espaçamento entre os grupos de input e seta */
+}
+.input-group input {
+    padding-right: 30px; /* Espaçamento para acomodar o ícone */
+    height: 60px; /* Defina a altura desejada para o input */
+    width: 300px; /* Largura do input */
+    margin-right: 10px; /* Espaçamento entre os inputs */
+    color: #959A24;
+    border: 1px solid ; /* Estilo da borda do input */
+    border-radius: 20px; /* Estilo do canto do input */
+    text-align: center;
+}
+.seta-lado {
+    font-size: 18px; /* Tamanho do ícone */
+    cursor: pointer;
+}
