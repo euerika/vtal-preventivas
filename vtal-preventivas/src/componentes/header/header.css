@@ -1,0 +1,21 @@
+.header{
+  display: flex;
+  height: 100px;
+  width: 100%;
+  background-color: #464644;
+  flex-direction: column;  
+}
+
+.logo-vtal{
+  height: 50px;
+  width: 240px;
+  margin-top: 10px;
+  margin-left: 80px; 
+}
+
+P{
+  color: white;
+  font-size: small;
+ text-align: end;
+ margin-right: 80px;  
+}
