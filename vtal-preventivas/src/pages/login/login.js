@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Footer from "../../componentes/footer/footer.js";
 import Header from "../../../src/componentes/header/header.js";
-import "./login.css"
+import "./login.css";
+
 
 export const Login = () => {
   const [nomeFuncionario, setNomeFuncionario] = useState('');
@@ -61,7 +62,6 @@ export const Login = () => {
                 />
               <div style={{ color: 'red' }}>{errorMsg}</div>
               <button type="submit" className="botao-entrar">Entrar</button>                      
-
       </form>   
     </div>
     <Footer />
