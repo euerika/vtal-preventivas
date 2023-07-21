@@ -4,7 +4,7 @@ import { FaAngleRight } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 
-const InputSeta = ({ placeholder }) => {
+const InputSeta = ({ placeholder }) => { 
   return (
     <div className="input-seta">
         <div className="input-group">
@@ -15,7 +15,7 @@ const InputSeta = ({ placeholder }) => {
         </div>
         <div className="input-group">
             <input type="text" value="Atendimento 2" placeholder={placeholder} />
-            <Link to="/servico">
+            <Link to="/servico/">
                 <FaAngleRight className="seta-lado" />
             </Link>
         </div>

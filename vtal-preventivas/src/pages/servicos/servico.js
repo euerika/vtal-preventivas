@@ -1,11 +1,21 @@
-import React from 'react';
-// import { useParams } from 'react-router-dom';
+import React, {useState, useEffect} from 'react';
+import { format } from 'date-fns'
 import Footer from "../../componentes/footer/footer";
 import Header from "../../componentes/header/header";
 import "./servico.css"
+import Mapa from '../../componentes/localizaçao/localizacao';
+
+
 
 const Servico = () => {
-  // const { nomeFuncionario } = useParams();
+  const [dataAtual, setDataAtual] = useState('');
+
+  useEffect(() => {
+    const data = new Date();
+    const formatoData = format(data, "dd/MM/yy HH:mm"); 
+    setDataAtual(formatoData); 
+
+}, []);  
 
   return (
       <>
@@ -13,7 +23,8 @@ const Servico = () => {
       <div className="container-atendimentos">
           <h1 className="atendimento">
               Atendimento:
-          </h1>        
+          </h1>  
+          <p>Data : {dataAtual}</p>     
       </div>
       <div className='select'>
         <select className='selects' >
@@ -41,6 +52,7 @@ const Servico = () => {
         (Observação):
       </h4>
       <textarea  placeholder='Registar informações/observações sobre o atendimento...'/>
+      <Mapa  className="map-container" />
       </div>
       <button type="submit" className="botao-finalizar">Finalizar</button>
       <Footer />
