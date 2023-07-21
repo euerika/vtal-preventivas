@@ -1,18 +1,24 @@
 import React from 'react';
-// import { useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import Footer from "../../componentes/footer/footer";
 import Header from "../../componentes/header/header";
-import "./servico.css"
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import './servico.css';
+
+const finalizarAtendimento = () => {
+  toast.success('Atendimento finalizado com!');
+}
 
 const Servico = () => {
-  // const { nomeFuncionario } = useParams();
+  const { numeroControle } = useParams();
 
   return (
       <>
       <Header /> 
       <div className="container-atendimentos">
           <h1 className="atendimento">
-              Atendimento:
+              Atendimento: {numeroControle}
           </h1>        
       </div>
       <div className='select'>
@@ -42,7 +48,13 @@ const Servico = () => {
       </h4>
       <textarea  placeholder='Registar informações/observações sobre o atendimento...'/>
       </div>
-      <button type="submit" className="botao-finalizar">Finalizar</button>
+      <button 
+        type="submit" 
+        className="botao-finalizar"
+        onClick={() => finalizarAtendimento()} 
+        >Finalizar
+      </button>
+      <ToastContainer  autoClose={3000} />
       <Footer />
       </>
 
