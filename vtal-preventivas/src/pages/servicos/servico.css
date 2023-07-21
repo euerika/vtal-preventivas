@@ -59,13 +59,27 @@ textarea {
   display: block;
   cursor: pointer;
 }
+p {
+  color:#464644;
+  margin-left: 80px; 
+}
+.map-container {
+  height: 120px;
+  width: 300px;
+  margin-left: 15px;
+  margin-top: 5px;
+  padding: 20px;
+}
 
 @media (min-width: 1024px) {
+  p {
+    margin-left: 500px;
+    
+  }
   .select {
     max-width: 600px; /* Aumente a largura máxima para telas maiores, se necessário */
   }
   .botao-finalizar {
     margin-left: 550px; /* Remova a margem esquerda para centralizar o botão em telas maiores */
   }
-
 }
