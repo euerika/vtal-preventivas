@@ -4,7 +4,8 @@ import Footer from "../../componentes/footer/footer";
 import Header from "../../componentes/header/header";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import './servico.css';
+import PhotoUpload from '../../componentes/PhotoUpload/PhotoUpload.js';
+import "./servico.css";
 
 const finalizarAtendimento = () => {
   toast.success('Atendimento finalizado com!');
@@ -47,6 +48,7 @@ const Servico = () => {
         (Observação):
       </h4>
       <textarea  placeholder='Registar informações/observações sobre o atendimento...'/>
+      <PhotoUpload />
       </div>
       <button 
         type="submit" 
