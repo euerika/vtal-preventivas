@@ -9,7 +9,7 @@ body {
 }
 .ola-funcionario {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
+    font-size: 13px;
     color: #464644;
     display: flex;
     flex-direction: row;
@@ -28,9 +28,8 @@ body {
 }
 .input-group {
     display: flex;
-    width: 100%;
     align-items: center;
-    margin-bottom: 10px; /* Espaçamento entre os grupos de input e seta */
+    margin-bottom: 30px; /* Espaçamento entre os grupos de input e seta */
 }
 .input-group input {
     padding-right: 30px; /* Espaçamento para acomodar o ícone */

@@ -8,7 +8,7 @@ import PhotoUpload from '../../componentes/PhotoUpload/PhotoUpload.js';
 import "./servico.css";
 
 const finalizarAtendimento = () => {
-  toast.success('Atendimento finalizado com!');
+  toast.success('Atendimento finalizado com sucesso!');
 }
 
 const Servico = () => {
