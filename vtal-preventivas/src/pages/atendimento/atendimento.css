@@ -25,9 +25,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-        
-  }
-
+}
 .input-group {
     display: flex;
     width: 100%;
@@ -36,8 +34,8 @@ body {
 }
 .input-group input {
     padding-right: 30px; /* Espaçamento para acomodar o ícone */
-    height: 60px; /* Defina a altura desejada para o input */
-    width: 300px; /* Largura do input */
+    height: 30px; /* Defina a altura desejada para o input */
+    width: 200px; /* Largura do input */
     margin-right: 10px; /* Espaçamento entre os inputs */
     color: #959A24;
     border: 1px solid ; /* Estilo da borda do input */
@@ -46,8 +44,7 @@ body {
 }
 .seta-lado {
     font-size: 30px; /* Tamanho do ícone */
-    /* cursor: pointer; */
+    cursor: pointer;
     color:#959A24;
-
 }
 

@@ -1,10 +1,13 @@
-import React, {useState, useEffect} from 'react';
+import { useParams } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify';
 import { format } from 'date-fns'
+import 'react-toastify/dist/ReactToastify.css';
+import PhotoUpload from '../../componentes/PhotoUpload/PhotoUpload.js';
+import React, {useState, useEffect} from 'react';
 import Footer from "../../componentes/footer/footer";
 import Header from "../../componentes/header/header";
-import "./servico.css"
 import Mapa from '../../componentes/localizaçao/localizacao';
-
+import "./servico.css"
 
 
 const Servico = () => {
@@ -14,8 +17,14 @@ const Servico = () => {
     const data = new Date();
     const formatoData = format(data, "dd/MM/yy HH:mm"); 
     setDataAtual(formatoData); 
+}, []);
 
-}, []);  
+const finalizarAtendimento = () => {
+  toast.success('Atendimento finalizado com!');
+}
+
+const Servico = () => {
+  const { numeroControle } = useParams();
 
   return (
       <>
@@ -24,7 +33,11 @@ const Servico = () => {
           <h1 className="atendimento">
               Atendimento:
           </h1>  
-          <p>Data : {dataAtual}</p>     
+          <p>Data : {dataAtual}</p> 
+
+              Atendimento: {numeroControle}
+          </h1>        
+
       </div>
       <div className='select'>
         <select className='selects' >
@@ -52,9 +65,16 @@ const Servico = () => {
         (Observação):
       </h4>
       <textarea  placeholder='Registar informações/observações sobre o atendimento...'/>
-      <Mapa  className="map-container" />
+      <PhotoUpload />
+      <Mapa  className="map-container" />  
       </div>
-      <button type="submit" className="botao-finalizar">Finalizar</button>
+      <button 
+        type="submit" 
+        className="botao-finalizar"
+        onClick={() => finalizarAtendimento()} 
+        >Finalizar
+      </button>
+      <ToastContainer  autoClose={3000} />
       <Footer />
       </>
 
