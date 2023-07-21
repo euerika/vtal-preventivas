@@ -1,11 +1,13 @@
-import React from 'react';
 import { useParams } from 'react-router-dom';
-import Footer from "../../componentes/footer/footer";
-import Header from "../../componentes/header/header";
 import { ToastContainer, toast } from 'react-toastify';
+import { format } from 'date-fns'
 import 'react-toastify/dist/ReactToastify.css';
 import PhotoUpload from '../../componentes/PhotoUpload/PhotoUpload.js';
-import "./servico.css";
+import React, {useState, useEffect} from 'react';
+import Footer from "../../componentes/footer/footer";
+import Header from "../../componentes/header/header";
+import Mapa from '../../componentes/localizaçao/localizacao';
+import "./servico.css"
 
 const finalizarAtendimento = () => {
   toast.success('Atendimento finalizado com sucesso!');
@@ -13,14 +15,25 @@ const finalizarAtendimento = () => {
 
 const Servico = () => {
   const { numeroControle } = useParams();
+  const [dataAtual, setDataAtual] = useState('');
+  
+    useEffect(() => {
+      const data = new Date();
+      const formatoData = format(data, "dd/MM/yy HH:mm"); 
+      setDataAtual(formatoData); 
+  }, []);
 
   return (
       <>
       <Header /> 
       <div className="container-atendimentos">
-          <h1 className="atendimento">
+           
+         
+          <h1>
               Atendimento: {numeroControle}
-          </h1>        
+          </h1>  
+          <p>Data : {dataAtual}</p>     
+
       </div>
       <div className='select'>
         <select className='selects' >
@@ -49,6 +62,7 @@ const Servico = () => {
       </h4>
       <textarea  placeholder='Registar informações/observações sobre o atendimento...'/>
       <PhotoUpload />
+      <Mapa  className="map-container" />  
       </div>
       <button 
         type="submit" 
