@@ -58,6 +58,20 @@ textarea {
   border: #F3FF01 solid 2px;
   color:white;
   margin-bottom: 20px;
+
+ }
+
+ p {
+  color:#464644;
+  margin-left: 80px; 
+ }
+
+ .map-container {
+  height: 100px;
+  width: 200px;
+  margin-left: 160px;
+  margin-top: 10px;
+
   cursor: pointer;
 }
 
@@ -67,4 +81,5 @@ textarea {
     margin-left: 550px;
     
   }
+
 }

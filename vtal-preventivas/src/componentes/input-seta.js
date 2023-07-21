@@ -4,8 +4,10 @@ import { FaAngleRight } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 
+
 const InputSeta = ({ numeroControle }) => {
     const [inputValue, setInputValue] = useState('');
+
 
     useEffect(() => {
         if (numeroControle) {
