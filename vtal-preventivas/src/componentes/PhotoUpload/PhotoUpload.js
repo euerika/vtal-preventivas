@@ -22,7 +22,7 @@ const PhotoUpload = () => {
 
   return (
     <div className='photo_upload'>
-      <input type="file" id="file-input" onChange={handleFileChange} />
+      <input type="file" id="file-input" className="botao" onChange={handleFileChange} />
       <label htmlFor="file-input" className="custom-file-upload"></label>
       <button onClick={handleUpload} className='button-enviar'>Enviar</button>
     </div>

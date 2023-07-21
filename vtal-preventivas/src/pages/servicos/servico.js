@@ -9,34 +9,30 @@ import Header from "../../componentes/header/header";
 import Mapa from '../../componentes/localizaçao/localizacao';
 import "./servico.css"
 
-
-const Servico = () => {
-  const [dataAtual, setDataAtual] = useState('');
-
-  useEffect(() => {
-    const data = new Date();
-    const formatoData = format(data, "dd/MM/yy HH:mm"); 
-    setDataAtual(formatoData); 
-}, []);
-
 const finalizarAtendimento = () => {
   toast.success('Atendimento finalizado com!');
 }
 
 const Servico = () => {
   const { numeroControle } = useParams();
+  const [dataAtual, setDataAtual] = useState('');
+  
+    useEffect(() => {
+      const data = new Date();
+      const formatoData = format(data, "dd/MM/yy HH:mm"); 
+      setDataAtual(formatoData); 
+  }, []);
 
   return (
       <>
       <Header /> 
       <div className="container-atendimentos">
-          <h1 className="atendimento">
-              Atendimento:
-          </h1>  
-          <p>Data : {dataAtual}</p> 
-
+           
+         
+          <h1>
               Atendimento: {numeroControle}
-          </h1>        
+          </h1>  
+          <p>Data : {dataAtual}</p>     
 
       </div>
       <div className='select'>

@@ -8,7 +8,7 @@
  justify-content: center;
  align-items: center;
  width: 95%;
- height: 580px;
+ height: 600px;
  background-color:#FDFEF1;
  margin-left: 10px;
  border-radius: 20px;
@@ -67,10 +67,11 @@ textarea {
  }
 
  .map-container {
-  height: 100px;
-  width: 200px;
-  margin-left: 160px;
-  margin-top: 10px;
+  height: 120px;
+  width: 300px;
+  margin-left: 15px;
+  margin-top: 5px;
+  padding: 20px;
 
   cursor: pointer;
 }
